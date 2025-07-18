@@ -1,0 +1,10 @@
+/** CSS Framework, consider using only 3-4 colors for consistency. Simple color palette, positive and modern tone **/
+:root {
+  --main-bg-color: #f0f8ff;
+  --section-bg-color: #e3f2fd;
+  --hightlight-color: #e0f7fa;
+  --subtext-color: #4b5563;
+  --main-font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/** Design css for title, header, mood-input, advice-box, mood-history**/

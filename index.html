@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mood Tracker Website</title>
+    <script defer src="script.js"></script>
+    <!-- Script for API chart.js-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header and Title section-->
+    <h1>Mood Tracker 😊 (Logo placeholder)</h1>
+    <!-- Mood Input Section -->
+    <div id="mood-input">
+      <p>How are you feeling today?</p>
+      <button onclick="saveMood('😊 Happy')">😊 Happy</button>
+      <button onclick="saveMood('😐 Neutral')">😐 Neutral</button>
+      <button onclick="saveMood('😢 Sad')">😢 Sad</button>
+    </div>
+    <br />
+    <br />
+    <!-- Advice Fetching Section-->
+    <h2>Daily Advice</h2>
+    <div id="advice-box">
+      <p><i>Click a mood above to get advice!</i></p>
+    </div>
+    <!-- Mood History Section -->
+    <h2>Mood History</h2>
+    <ul id="mood-history"></ul>
+    <!-- Visualization Chart (Chart.js API) Section-->
+    <h2>Mood Summary</h2>
+    <canvas id="moodChart" width="300" height="200"></canvas>
+  </body>
+  <!-- Footer section for Copyright-->
+  <footer>Placeholder for footer</footer>
+</html>
