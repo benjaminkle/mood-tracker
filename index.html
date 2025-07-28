@@ -13,23 +13,28 @@
   <body>
     <!-- Header and Title section-->
     <header>
-    <img src="mood-tracker-logo transparent.png" alt="A gradient yellow sun logo with 'mood tracker' written in the middle" width="350" height="350">
+      <img
+        src="icons/mood-tracker-logo transparent.png"
+        alt="A gradient yellow sun logo with 'mood tracker' written in the middle"
+        width="350"
+        height="350"
+      />
     </header>
-    
+
     <!-- Mood Input Section -->
     <div id="mood-input">
       <h1>How are you feeling today?</h1>
 
       <button id="sad" onclick="saveMood('Sad')">
-        Sad <img src="sademoji.png" width="25"height="25">
+        Sad <img src="icons/sademoji.png" width="25" height="25" />
       </button>
 
       <button id="neutral" onclick="saveMood('Neutral')">
-        Neutral <img src="neutralemoji.png" width="25"height="25">
+        Neutral <img src="icons/neutralemoji.png" width="25" height="25" />
       </button>
-      
+
       <button id="happy" onclick="saveMood('Happy')">
-        Happy <img src="happyemoji.png" width="25"height="25">
+        Happy <img src="icons/happyemoji.png" width="25" height="25" />
       </button>
     </div>
     <br />
@@ -43,27 +48,27 @@
 
     <!-- Mood History Section -->
     <div id="mood-history">
-    <h3>Mood History</h3>
-    <p id="mood-history"></p>
+      <h3>Mood History</h3>
+      <p id="mood-history"></p>
     </div>
 
     <!-- Visualization Chart (Chart.js API) Section-->
     <div id="mood-chart">
-    <h4>Mood Summary</h4>
-    <canvas id="moodChart" width="300" height="200"></canvas>
+      <h4>Mood Summary</h4>
+      <canvas id="moodChart" width="300" height="200"></canvas>
     </div>
-
   </body>
-<!-- Navbar -->
+  <!-- Navbar -->
 
-<ul><nav>
-  <li><a class="active" href="#">Top of Page</a></li>
-  <li><a href="#advice-box">Advice</a></li>
-  <li><a href="#mood-history">Mood History</a></li>
-  <li><a href="#mood-chart">Chart</a></li>
-  </nav>
-</ul>
+  <ul>
+    <nav>
+      <li><a class="active" href="#">Top of Page</a></li>
+      <li><a href="#advice-box">Advice</a></li>
+      <li><a href="#mood-history">Mood History</a></li>
+      <li><a href="#mood-chart">Chart</a></li>
+    </nav>
+  </ul>
 
   <!-- Footer section for Copyright-->
-  <footer> &copy; 2025 Kateyln Thomas, Huynh Khoa Le and Nishant Shukla.</footer>
+  <footer>&copy; 2025 Kateyln Thomas, Huynh Khoa Le and Nishant Shukla.</footer>
 </html>
