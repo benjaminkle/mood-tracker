@@ -7,6 +7,7 @@
   --main-font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
+
 /** Design css for title, header, mood-input, advice-box, mood-history**/
 
 body {
@@ -27,8 +28,9 @@ h1 {
 
 .typewriter {
   margin: 0 auto;
+  font-size: clamp(12px, 4vw, 36px); /* responsive font size */
   overflow: hidden;
-  border-right: 1px solid black; /* Blinking cursor */
+  border-right: 1px solid black;
   white-space: nowrap;
   letter-spacing: 1px;
   animation: typing 2.5s steps(28, end) forwards, blink 0.75s step-end infinite;
@@ -66,8 +68,14 @@ button img {
   text-align: center;
 }
 
-button:hover {
-  background-color: #ffd08a;
+.but1:hover {
+  background-color: #f0a22c;
+}
+.but2:hover {
+  background-color: #b5d88e;
+}
+.but3:hover {
+  background-color: #48e78a;
 }
 
 button:active {
@@ -171,13 +179,13 @@ footer {
 #mood-input {
   border-radius: 15px;
   background-color: rgb(250, 247, 244);
-  width: 50%;
+  width: 75%;
   margin: 0 auto;
 }
 
 .body-section {
   border-radius: 15px;
   background-color: rgb(250, 247, 244);
-  width: 50%;
+  width: 75%;
   margin: 15px auto;
 }
