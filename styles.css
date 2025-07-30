@@ -1,10 +1,11 @@
 /** CSS Framework, consider using only 3-4 colors for consistency. Simple color palette, positive and modern tone **/
 :root {
-  --main-bg-color: #FFE0B0;
+  --main-bg-color: #ffe0b0;
   --subtext-color: #1f1c1b;
-  --footer-color: #FFB84B;
-  --footer-text: #FFFCF8;
-  --main-font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  --footer-color: #ffb84b;
+  --footer-text: #332516;
+  --main-font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 /** Design css for title, header, mood-input, advice-box, mood-history**/
 
@@ -24,12 +25,38 @@ h1 {
   padding: 30px;
 }
 
+.typewriter {
+  margin: 0 auto;
+  overflow: hidden;
+  border-right: 1px solid black; /* Blinking cursor */
+  white-space: nowrap;
+  letter-spacing: 1px;
+  animation: typing 2.5s steps(28, end) forwards, blink 0.75s step-end infinite;
+  width: 0;
+}
+
+/* Typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 22ch;
+  } /* Total characters in the sentence */
+}
+
+/* Blinking cursor */
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
 button {
-  background-color: #fce8d4;
+  background-color: #f7ddc5;
   border: none;
   padding: 10px;
   border-radius: 10px;
-  margin: 10px;
+  margin: 20px;
   font-size: 20px;
   text-align: center;
 }
@@ -40,15 +67,15 @@ button img {
 }
 
 button:hover {
-background-color:#ffd08a;
+  background-color: #ffd08a;
 }
 
-button:active{
-  background-color: #FFB84B;
+button:active {
+  background-color: #ffb84b;
 }
 
 h2 {
-  margin: 50px;
+  margin: 5px;
   font-size: 25px;
   padding: 20px;
 }
@@ -78,10 +105,10 @@ ul {
 li {
   display: inline;
   border-right: 5px solid;
-  color:#ffd08a;
+  color: #ffd08a;
 }
 
-li:last-child{
+li:last-child {
   border-right: none;
 }
 
@@ -90,7 +117,7 @@ a {
   text-align: center;
   text-decoration: none;
   color: var(--footer-text);
-
+  font-weight: 600;
 }
 
 footer {
@@ -103,41 +130,54 @@ footer {
 }
 
 @media (max-width: 768px) {
-    img{
-        height: 50%;
-        width: 50%;
-        width: 50%;
-    }
-
-    button{
-      width: 50%;
-    }
-
-    button img{
-      width: 25%;
-      margin: 0 0 0 25px;
-    }
-
-    ul{
-      width: 100%;
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      margin: 0;
-      border: none;
-      font-size: 20px;
-      }
-
-      li{
-        border-right: none;
-      }
-
-      a{
-        padding: 5px;
-      }
-
-      footer{
-        padding: 5px;
-        font-size: 15px;
-      }
+  img {
+    height: 50%;
+    width: 50%;
+    width: 50%;
   }
+
+  button {
+    width: 50%;
+  }
+
+  button img {
+    width: 25%;
+    margin: 0 0 0 25px;
+  }
+
+  ul {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    border: none;
+    font-size: 20px;
+  }
+
+  li {
+    border-right: none;
+  }
+
+  a {
+    padding: 5px;
+  }
+
+  footer {
+    padding: 5px;
+    font-size: 15px;
+  }
+}
+#mood-input {
+  border-radius: 15px;
+  background-color: rgb(250, 247, 244);
+  width: 50%;
+  margin: 0 auto;
+}
+
+.body-section {
+  border-radius: 15px;
+  background-color: rgb(250, 247, 244);
+  width: 50%;
+  margin: 15px auto;
+}
