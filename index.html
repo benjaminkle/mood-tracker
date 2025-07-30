@@ -14,16 +14,15 @@
     <!-- Header and Title section-->
     <header>
       <img
-        src="icons/mood-tracker-logo transparent.png"
+        src="icons/mood-tracker-logo2.png"
         alt="A gradient yellow sun logo with 'mood tracker' written in the middle"
-        width="350"
-        height="350"
+        width="750"
       />
     </header>
 
     <!-- Mood Input Section -->
     <div id="mood-input">
-      <h1>How are you feeling today?</h1>
+      <h1 class="typewriter">How are you feeling today?</h1>
 
       <button id="sad" onclick="saveMood('Sad')">
         Sad <img src="icons/sademoji.png" width="25" height="25" />
@@ -39,27 +38,27 @@
     </div>
     <br />
     <br />
+    <section class="body-section">
+      <!-- Advice Fetching Section-->
+      <h2>Daily Advice</h2>
+      <div id="advice-box">
+        <p><i>Click a mood above to get advice!</i></p>
+      </div>
 
-    <!-- Advice Fetching Section-->
-    <h2>Daily Advice</h2>
-    <div id="advice-box">
-      <p><i>Click a mood above to get advice!</i></p>
-    </div>
+      <!-- Mood History Section -->
+      <div id="mood-history">
+        <h3>Mood History</h3>
+        <p id="mood-history"></p>
+      </div>
 
-    <!-- Mood History Section -->
-    <div id="mood-history">
-      <h3>Mood History</h3>
-      <p id="mood-history"></p>
-    </div>
-
-    <!-- Visualization Chart (Chart.js API) Section-->
-    <div id="mood-chart">
-      <h4>Mood Summary</h4>
-      <canvas id="moodChart" width="300" height="200"></canvas>
-    </div>
+      <!-- Visualization Chart (Chart.js API) Section-->
+      <div id="mood-chart">
+        <h4>Mood Summary</h4>
+        <canvas id="moodChart" width="300" height="200"></canvas>
+      </div>
+    </section>
   </body>
   <!-- Navbar -->
-
   <ul>
     <nav>
       <li><a class="active" href="#">Top of Page</a></li>
@@ -68,7 +67,6 @@
       <li><a href="#mood-chart">Chart</a></li>
     </nav>
   </ul>
-
   <!-- Footer section for Copyright-->
   <footer>&copy; 2025 Kateyln Thomas, Huynh Khoa Le and Nishant Shukla.</footer>
 </html>
