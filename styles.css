@@ -28,31 +28,42 @@ h1 {
 
 .typewriter {
   margin: 0 auto;
-  font-size: clamp(12px, 4vw, 36px); /* responsive font size */
+  position: relative;
   overflow: hidden;
-  border-right: 1px solid black;
   white-space: nowrap;
   letter-spacing: 1px;
-  animation: typing 2.5s steps(28, end) forwards, blink 0.75s step-end infinite;
+  font-size: clamp(18px, 4vw, 36px);
+  animation: typing 2.5s steps(28, end) forwards;
   width: 0;
 }
 
-/* Typing effect */
+/* custom shorter cursor */
+.typewriter::after {
+  content: "";
+  position: absolute;
+  top: 25%; /* adjust vertical position */
+  right: 0;
+  width: 1px;
+  height: 1.5em; /* controls cursor height */
+  background-color: black;
+  animation: blink 0.75s step-end infinite;
+}
+
 @keyframes typing {
   from {
     width: 0;
   }
   to {
     width: 22ch;
-  } /* Total characters in the sentence */
-}
-
-/* Blinking cursor */
-@keyframes blink {
-  50% {
-    border-color: transparent;
   }
 }
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
 button {
   background-color: #f7ddc5;
   border: none;
