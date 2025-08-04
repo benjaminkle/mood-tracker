@@ -99,19 +99,12 @@ h2 {
   padding: 20px;
 }
 
-h3 {
-  margin: 50px;
+/* Global H3 Titles */
+.body-section h3 {
   font-size: 25px;
-  padding: 20px;
 }
 
-h4 {
-  margin: 50px;
-  font-size: 25px;
-  padding: 20px;
-}
-
-ul {
+ul.footer-nav {
   background-color: var(--footer-color);
   position: fixed;
   bottom: 0;
@@ -121,7 +114,7 @@ ul {
   margin: 0;
 }
 
-li {
+ul.footer-nav li {
   display: inline;
   border-right: 5px solid;
   color: #ffd08a;
@@ -164,14 +157,14 @@ footer {
     margin: 0 0 0 25px;
   }
 
-  ul {
-    width: 100%;
+  ul.footer-nav {
+    background-color: var(--footer-color);
     position: fixed;
     bottom: 0;
     left: 0;
+    padding: 10px;
+    width: 100%;
     margin: 0;
-    border: none;
-    font-size: 20px;
   }
 
   li {
@@ -199,4 +192,80 @@ footer {
   background-color: rgb(250, 247, 244);
   width: 75%;
   margin: 15px auto;
+}
+/* Mood History Main Title Bar */
+.history-header-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.history-header-centered .history-heading {
+  margin-top: 25px;
+  font-size: 24px;
+  font-weight: bold;
+  display: inline;
+}
+
+.history-buttons-inline {
+  display: flex;
+  gap: 6px; /* Small gap between buttons */
+}
+
+/* Hide the list inside the container when collapsed */
+#mood-history-container.collapsed ul {
+  display: none;
+}
+
+/* Hide/show button and Clear button*/
+#toggle-history,
+#clear-history {
+  padding: 5px 20px;
+  font-size: 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #cce6ff;
+  color: #333;
+  margin: 0;
+}
+
+#clear-history {
+  background-color: #ffc2c2;
+}
+
+#clear-history:hover {
+  background-color: #ff9999;
+}
+
+#toggle-history:hover {
+  background-color: #a6d6ff;
+}
+
+.history-buttons-inline {
+  display: flex;
+  gap: 6px;
+}
+
+/* Mood History Record Section */
+#mood-history {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px auto;
+  width: 100%;
+}
+
+#mood-history li {
+  background-color: #c6e48b;
+  color: #333;
+  font-size: 1rem;
+  padding: 10px 10px;
+  border-radius: 12px;
+  margin: 10px auto;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
