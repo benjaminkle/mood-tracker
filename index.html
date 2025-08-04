@@ -40,34 +40,44 @@
     <br />
     <br />
     <section class="body-section">
+      <!-- Mood History Section -->
+      <div id="mood-history-container">
+        <div class="history-header-centered">
+          <h3 class="history-heading">Mood History</h3>
+          <div class="history-buttons-inline">
+            <button id="toggle-history" onclick="toggleHistory()">Hide</button>
+            <button id="clear-history" onclick="clearMoodHistory()">
+              Clear
+            </button>
+          </div>
+        </div>
+        <ul id="mood-history"></ul>
+      </div>
+
       <!-- Advice Fetching Section-->
-      <h2>Daily Advice</h2>
+      <h3>Daily Uplifting Quote</h3>
       <div id="advice-box">
         <p><i>Click a mood above to get advice!</i></p>
       </div>
-
-      <!-- Mood History Section -->
-      <div id="mood-history">
-        <h3>Mood History</h3>
-        <p id="mood-history"></p>
-      </div>
-
       <!-- Visualization Chart (Chart.js API) Section-->
       <div id="mood-chart">
-        <h4>Mood Summary</h4>
-        <canvas id="moodChart" width="300" height="200"></canvas>
+        <h3>Mood Summary</h3>
+        <div style="width: 100%; max-width: 800px; height: 500px; margin: auto">
+          <canvas id="moodChart"></canvas>
+        </div>
       </div>
     </section>
   </body>
   <!-- Navbar -->
-  <ul>
+  <ul class="footer-nav">
     <nav>
-      <li><a class="active" href="#">Top of Page</a></li>
+      <li><a href="#">Top of Page</a></li>
       <li><a href="#advice-box">Advice</a></li>
       <li><a href="#mood-history">Mood History</a></li>
       <li><a href="#mood-chart">Chart</a></li>
     </nav>
   </ul>
+
   <!-- Footer section for Copyright-->
   <footer>&copy; 2025 Kateyln Thomas, Huynh Khoa Le and Nishant Shukla.</footer>
 </html>
