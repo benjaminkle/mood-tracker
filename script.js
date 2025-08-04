@@ -43,6 +43,27 @@ function displayMoods() {
 
 // Write fetch function for fetchAdvice()
 // Write functions for toggle button and clearHistory button (placed at Mood History Title)
+function toggleHistory() {
+  const container = document.getElementById("mood-history-container");
+  const toggleBtn = document.getElementById("toggle-history");
+
+  if (container.classList.contains("collapsed")) {
+    container.classList.remove("collapsed");
+    toggleBtn.textContent = "Hide";
+  } else {
+    container.classList.add("collapsed");
+    toggleBtn.textContent = "Show";
+  }
+}
+function clearMoodHistory() {
+  const confirmClear = confirm(
+    "Are you sure you want to clear all mood history?"
+  );
+  if (confirmClear) {
+    localStorage.removeItem("moodHistory");
+    displayMoods(); // Refresh the list and chart
+  }
+}
 // Chart.js placeholder, consider visualize as line chart
 // Load on page
 
